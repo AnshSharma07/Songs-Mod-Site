@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Music Player Mod | Modular Boy Ansh</title>
+
+<style>
+
+:root{
+--bg:#0c0f14;
+--card:#131822;
+--accent:#00ff88;
+--text:#e6edf3;
+--muted:#8b949e;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:var(--bg);
+color:var(--text);
+overflow-x:hidden;
+}
+
+/* Navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+border-bottom:1px solid #1f2633;
+background:rgba(15,18,25,0.85);
+backdrop-filter:blur(6px);
+}
+
+.logo{
+font-weight:600;
+}
+
+nav a{
+color:var(--muted);
+margin-left:25px;
+font-size:0.9rem;
+text-decoration:none;
+transition:.2s;
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+/* Layout */
+
+.container{
+max-width:950px;
+margin:auto;
+padding:70px 8%;
+}
+
+.title{
+font-size:2.6rem;
+margin-bottom:15px;
+}
+
+.green{
+color:var(--accent);
+}
+
+.desc{
+color:var(--muted);
+margin-bottom:30px;
+}
+
+/* Cards */
+
+.card{
+background:var(--card);
+padding:25px;
+border-radius:10px;
+border:1px solid #1f2633;
+margin-top:25px;
+transition:.25s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+border-color:var(--accent);
+
+box-shadow:
+0 0 10px rgba(0,255,136,.15),
+0 0 25px rgba(0,255,136,.08);
+}
+
+.card h2{
+font-size:1.3rem;
+margin-bottom:15px;
+border-left:4px solid var(--accent);
+padding-left:10px;
+}
+
+ul{
+color:var(--muted);
+line-height:1.7;
+font-size:.95rem;
+}
+
+/* Image */
+
+.preview{
+width:100%;
+border-radius:8px;
+border:1px solid #1f2633;
+margin-top:15px;
+}
+
+/* Buttons */
+
+.button{
+
+display:inline-block;
+padding:10px 18px;
+border:1px solid var(--accent);
+border-radius:6px;
+color:var(--accent);
+text-decoration:none;
+margin-top:15px;
+transition:.2s;
+font-size:.85rem;
+
+}
+
+.button:hover{
+
+background:var(--accent);
+color:black;
+
+}
+
+/* Status badge */
+
+.badge{
+
+display:inline-block;
+font-size:.7rem;
+padding:4px 9px;
+background:rgba(0,255,136,.15);
+border:1px solid var(--accent);
+border-radius:4px;
+margin-left:10px;
+color:var(--accent);
+
+}
+
+/* Footer */
+
+footer{
+
+padding:40px 8%;
+text-align:center;
+font-size:.8rem;
+color:var(--muted);
+border-top:1px solid #1f2633;
+margin-top:60px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+Modular Boy Ansh
+</div>
+
+<div>
+
+<a href="index.html">Home</a>
+
+<a href="https://www.mediafire.com/file/7vbbltmd2uv9bp3/songsmod_alpha_Ansh.jar/file" target="_blank">
+Download
+</a>
+
+<a href="https://www.youtube.com/@ModularBoyAnsh" target="_blank">
+YouTube
+</a>
+
+</div>
+
+</nav>
+
+
+<div class="container">
+
+<div class="title">
+
+Music Player Mod
+
+<span class="badge">
+Alpha v0.1
+</span>
+
+</div>
+
+<p class="desc">
+
+Play your own custom songs inside Minecraft using a simple in-game music player GUI.
+
+</p>
+
+
+<div class="card">
+
+<h2>Current Features</h2>
+
+<ul>
+
+<li>Import custom .ogg songs</li>
+
+<li>In-game music player GUI</li>
+
+<li>Reload songs without restarting</li>
+
+<li>Auto generated resourcepack</li>
+
+<li>Simple song management system</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Planned Updates</h2>
+
+<ul>
+
+<li>Volume control slider</li>
+
+<li>Direct MP3 support</li>
+
+<li>Loop button</li>
+
+<li>Playlist system</li>
+
+<li>Random song button</li>
+
+<li>Better UI design</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>GUI Preview</h2>
+
+<img class="preview" src="musicmod_gui.png">
+
+</div>
+
+
+<div class="card">
+
+<h2>Installation Guide</h2>
+
+<ul>
+
+<li>Put mod inside mods folder</li>
+
+<li>Start Minecraft</li>
+
+<li>Enable Songs Mod resourcepack</li>
+
+<li>Type /instructions</li>
+
+<li>Click Add Song</li>
+
+<li>Add .ogg files</li>
+
+<li>Press Reload Songs</li>
+
+<li>Press F3 + T</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>Download</h2>
+
+<a class="button"
+
+href="https://www.mediafire.com/file/7vbbltmd2uv9bp3/songsmod_alpha_Ansh.jar/file"
+
+target="_blank">
+
+Download Music Player Mod
+
+</a>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+© 2026 Modular Boy Ansh — Minecraft Mod Developer
+
+</footer>
+
+
+</body>
+
+</html>
